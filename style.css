@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Serif Pro", serif; */
+  color: #333;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  cursor: pointer;
+  background-color: #4e73f5;
+  color: #fff;
+  padding: 1em;
+  font-weight: 600;
+  /* font-size: 0.9em; */
+  display: inline-block;
+  width: fit-content;
+}
+
+.secondary {
+  background-color: transparent;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* ---------------- */
+
+.section_title {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 500;
+
+  color: rgb(0, 48, 94);
+  font-size: 34px;
+  text-align: center;
+}
+
+.bewertung_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bewertung_image {
+  background-image: url("image.webp");
+  width: 70%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 50%;
+  z-index: -1;
+}
+
+.bewertung_content {
+  background-color: #00305d;
+  padding: 4.5em;
+  color: #fff;
+  z-index: 99;
+  width: 50%;
+
+  margin-left: auto;
+  margin-top: -25%;
+}
+
+.content_title {
+  font-family: "Source Serif Pro", serif;
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+}
+
+.content_text {
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+.bewertung_content ul {
+  list-style-position: inside;
+  margin-bottom: 2em;
+}
+
+.bewertung_content ul li {
+  margin-bottom: 0.6em;
+}
+
+.bewertung_buttons {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+/* ----------- */
+@media (max-width: 992px) {
+  .bewertung_wrapper {
+    flex-direction: column;
+  }
+
+  .bewertung_image {
+    width: 100%;
+
+    background-repeat: no-repeat;
+
+    padding-top: 67%;
+  }
+
+  .bewertung_content {
+    z-index: 99;
+    width: 100%;
+
+    margin-left: 0;
+    margin-top: 0%;
+  }
+
+  .bewertung_buttons {
+    display: block;
+  }
+
+  .primary {
+    margin-bottom: 2em;
+  }
+
+  .fa-eye {
+    margin-bottom: 0;
+  }
+}
